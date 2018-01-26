@@ -723,15 +723,12 @@ static int kDragCenterContext;
 - (void)mapViewDidFinishRenderingMap:(AIRMap *)mapView fullyRendered:(BOOL)fullyRendered
 {
     [mapView finishLoading];
-<<<<<<< HEAD
     [mapView cacheViewIfNeeded];
 
     mapView.hasStartedRendering = NO;
     [self _emitRegionChangeEvent:mapView continuous:NO];
 
     mapView.onMapReady(@{});
-=======
->>>>>>> upstream/master
 }
 
 #pragma mark Private
